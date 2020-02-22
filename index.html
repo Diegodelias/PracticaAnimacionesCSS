@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pagina 1  (Intro)-->
+    <section id="page-1" class="page">
+    <h1>Bienvenido a mi presentación</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorem? Aspernatur maiores facere assumenda praesentium commodi saepe eaque nihil suscipit nesciunt! Possimus ut vero perferendis debitis delectus praesentium id, reiciendis ipsum quaerat? Ipsam quod voluptatem vel exercitationem. Ipsum, tempora unde.</p>
+    <div>
+        <a href="#page-2" class="btn">
+            Pagina siguiente <i class="fas fa-arrow-circle-down"></i>
+
+        </a>
+    </div>
+
+    </section>
+  <!-- Pagina 2  (Intro)-->
+  <section id="page-2" class="page">
+  <h1>Pagina 2</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorem? Aspernatur maiores facere assumenda praesentium commodi saepe eaque nihil suscipit nesciunt! Possimus ut vero perferendis debitis delectus praesentium id, reiciendis ipsum quaerat? Ipsam quod voluptatem vel exercitationem. Ipsum, tempora unde.</p>
+  <div>
+
+    <a href="#page-1" class=" btn btn-dark">
+        Pagina anterior <i class="fas fa-arrow-circle-up"></i>
+
+    </a>
+      <a href="#page-3" class="btn">
+          Pagina siguiente <i class="fas fa-arrow-circle-down"></i>
+
+      </a>
+  </div>
+
+  </section>
+ <!-- Pagina 3  (Intro)-->
+  <section id="page-3" class="page">
+    <h1>Pagina 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorem? Aspernatur maiores facere assumenda praesentium commodi saepe eaque nihil suscipit nesciunt! Possimus ut vero perferendis debitis delectus praesentium id, reiciendis ipsum quaerat? Ipsam quod voluptatem vel exercitationem. Ipsum, tempora unde.</p>
+    <div>
+  
+      <a href="#page-2" class="btn">
+          Pagina  anterior <i class="fas fa-arrow-circle-up"></i>
+  
+      </a>
+        <a href="#page-4" class="btn btn-dark">
+            Pagina siguiente <i class="fas fa-arrow-circle-down"></i>
+  
+        </a>
+    </div>
+  
+    </section>
+
+
+     <!-- Pagina 4  (Intro)-->
+  <section id="page-4" class="page">
+    <h1>Pagina 4</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorem? Aspernatur maiores facere assumenda praesentium commodi saepe eaque nihil suscipit nesciunt! Possimus ut vero perferendis debitis delectus praesentium id, reiciendis ipsum quaerat? Ipsam quod voluptatem vel exercitationem. Ipsum, tempora unde.</p>
+    <div>
+  
+      <a href="#page-3" class="btn">
+          Pagina anterior <i class="fas fa-arrow-circle-up"></i>
+  
+      </a>
+        <a href="#page-4" class=" btn btn-dark">
+            Pagina siguiente <i class="fas fa-arrow-circle-down"></i>
+  
+        </a>
+    </div>
+  
+    </section>
+    
+</body>
+<script src="https://kit.fontawesome.com/96df385409.js" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+
+       // Smooth Scrolling
+       $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+</html>
